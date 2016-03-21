@@ -1,0 +1,174 @@
+{
+  "basics": {
+    "name": "Laith Shadeed",
+    "label": "Code writer & problem-solver with \u2665",
+    "picture": "p.jpg",
+    "email": "hi@l3.io",
+    "phone": "+31 6 2724 9393",
+    "website": "http://l3.io",
+    "websiteTitle": "l3.io",
+    "summary": "Professional experience in web application development @Scale using many different programming languages, frameworks and platforms.",
+    "location": {
+      "city": "Amsterdam",
+      "countryCode": "NL"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "laithshadeed",
+        "url": "https://twitter.com/laithshadeed"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "laithshadeed",
+        "url": "https://linkedin.com/in/laithshadeed"
+      },
+      {
+        "network": "Github",
+        "username": "laithshadeed",
+        "url": "https://github.com/laithshadeed"
+      },
+      {
+        "network": "Stack-Overflow",
+        "username": "laithshadeed",
+        "url": "https://stackoverflow.com/users/251885/laith-shadeed"
+      }
+    ],
+    "resumes": [
+      {
+        "name": "Style 1",
+        "url": "resume-so.html"
+      },
+      {
+        "name": "Style 2",
+        "url": "resume-ace.html"
+      },
+      {
+        "name": "PDF",
+        "url": "resume.pdf"
+      },
+      {
+        "name": "Markdown",
+        "url": "resume.md"
+      },
+      {
+        "name": "JSON",
+        "url": "resume.json"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Booking.com",
+      "position": "Back-end Software Engineer",
+      "website": "https://www.booking.com",
+      "startDate": "2014-08-01",
+      "endDate": "2016-01-31",
+      "summary": "Alchemist that converts code to money by A/B experimentation.",
+      "highlights": [
+        "Pushing forward the launch of Apple Maps integration with Booking.com. It was a project running for more than two years (Perl).",
+        "Leading the revamp of Booking.com annual-employees-event application, it handles the reservation of hotels & flights for thousands of employees (Perl, AngularJS).",
+        "Leading the creation of a missing tool: Booking.com application for meeting rooms. It helps hundreds of employees to become more efficient. It was hackathon project for 7 months (Perl, ReactJS).",
+        "Back-end support for maps, idea creation for A/B testing experiments with millions users & dollars every single day (Perl).",
+        "Part of the daily fire-fighting. Participate in solving live incidents that saves the company millions of dollars. Support +600 engineers on live jabber channel for rollout and live problems. Gave a training on how to do live monitoring using Graphite.",
+        "Stack: Perl, Ngnix, MySQL, Puppet, Salt, Redis, shardcached, Hadoop, Graphite and CentOS."
+      ]
+    },
+    {
+      "company": "One.com",
+      "position": "Lead/Senior Back-end Software Engineer",
+      "website": "https://www.one.com",
+      "startDate": "2012-02-01",
+      "endDate": "2014-07-31",
+      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS/PostgresSQL single-page application that servers +200K different domains.",
+      "highlights": [
+        "Back-end JSON APIs (PHP), then later using Javascript/NodeJS.",
+        "Automated build script from minifying assets to debian packaging (Bash).",
+        "Wrapper for Selenium and JUnit (Java), got replaced later by Robot.",
+        "Puppetizing development environments with Vagrant.",
+        "Patching different in-house system components: apache modules (C), video encoding system (Perl), flash video player (Actionscript).",
+        "Stack: Git, Knockout.js, Apache, Varnish, Gearman, Redis, Hadoop, Puppet, and Debian."
+      ]
+    },
+    {
+      "company": "Yahoo!",
+      "position": "Software Engineer, Associate",
+      "website": "https://www.yahoo.com",
+      "startDate": "2009-07-01",
+      "endDate": "2012-01-31",
+      "summary": "Learning what @Scale means, as part of multi-location development team, delivering products for millions of users that runs on thousands of servers.",
+      "highlights": [
+        "Participated in Maktoob SSO integration with Yahoo! Login (PHP)",
+        "Launch Yahoo! News for mobile devices in Arabic which support +4000 devices in 17 countries using Yahoo! Proprietary Blueprint platform (PHP).",
+        "Participated in implementing Arabic and Bidirectional script support for Yahoo! Mail (Javascript). The project was in Bangalore, India",
+        "Stack: CVS, Subversion, Smarty, Zend Framework, Apache, MySQL, Memcache, Apache Traffic Server, Redhat, Keykey, YCB, MDBM, technologies similar to MongoDB, Firebase and CFEngine"
+      ]
+    },
+    {
+      "company": "Genie9",
+      "position": "Software Engineer, Intern",
+      "website": "https://www.genie9.com",
+      "startDate": "2009-02-01",
+      "endDate": "2009-05-01",
+      "summary": "Learning what professional software development looks like",
+      "highlights": [
+        "This internship was part of my engineering degree curriculum. Through which I had the chance to create my first .dll file.",
+        "Simple file system enumeration application with threading support.",
+        "Stack: MS Visual Studio, MS VSS, C++, C, CLucene, MFC, Win32 API, Boost and Qt."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jordan University of Science and Technology",
+      "area": "Electrical Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2004-10-01",
+      "endDate": "2009-05-31",
+      "gpa": "80%",
+      "courses": [
+        "On Dean's List for 5 consecutive semesters, got two scholarships.",
+        "As a senior project, designed an Indoor Positioning System using WLAN fingerprinting (software implementation using C#)."
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "PHP",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Javascript",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Perl",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Ruby",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Bash",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "C",
+      "fluency": "Prior Experience"
+    },
+    {
+      "language": "C++",
+      "fluency": "Prior Experience"
+    },
+    {
+      "language": "Java",
+      "fluency": "Basic"
+    },
+    {
+      "language": "Actionscript",
+      "fluency": "Rudimentary"
+    }
+
+  ]
+}
