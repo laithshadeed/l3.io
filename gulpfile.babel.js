@@ -7,9 +7,8 @@ import browserSync from 'browser-sync';
 import {exec as exec} from 'child_process';
 
 gulp.task('default', ['build']);
-gulp.task('build', ['clean', 'themes']);
-gulp.task('themes', ['index', 'markdown', 'ace', 'so', 'ln']);
-gulp.task('clean', () => del(['*.html', 'resume.md', '*.pdf', 'dist']));
+gulp.task('build', ['index', 'markdown', 'ace', 'so', 'ln']);
+gulp.task('clean', () => del.sync(['*.html', 'resume.md', '*.pdf', 'dist']));
 
 const $ = gulploadplugins();
 const resume = './node_modules/.bin/resume';
@@ -38,7 +37,7 @@ const tasks = [
 ];
 
 tasks.forEach(task => {
-  gulp.task(task.name, cb => {
+  gulp.task(task.name, ['clean'], cb => {
     exec(task.cmd, cb);
   });
 });
@@ -47,8 +46,8 @@ gulp.task('pdf', ['print'], cb => {
   exec('./node_modules/.bin/html-pdf resume-print.html resume.pdf', cb);
 });
 
-gulp.task('ln', ['pdf'], () => {
-  exec('ln -sf resume.pdf r.pdf');
+gulp.task('ln', ['pdf'], cb => {
+  exec('ln -sf resume.pdf r.pdf', cb);
 });
 
 gulp.task('serve', ['build'], () => {
@@ -60,7 +59,11 @@ gulp.task('serve', ['build'], () => {
 });
 
 gulp.task('dist', ['build'], () => {
-  gulp.src(['*.{html,jpg,md,json,pdf}']).pipe(gulp.dest('dist'));
+  return gulp.src([
+    '*.{html,jpg,md,json,pdf}',
+    '!package.json',
+    '!README.md'
+  ]).pipe(gulp.dest('dist'));
 });
 
 gulp.task('lint', () => {
@@ -75,4 +78,22 @@ gulp.task('serve:dist', ['dist'], () => {
     server: ['dist'],
     port: 3000
   });
+});
+
+gulp.task('publish', ['dist'], () => {
+  const publisher = $.awspublish.create({
+    region: 'eu-west-1',
+    params: {
+      Bucket: 'l3.io'
+    }
+  });
+
+  const headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  gulp.src('dist/*')
+    .pipe($.awspublish.gzip())
+    .pipe(publisher.publish(headers))
+    .pipe($.awspublish.reporter());
 });
