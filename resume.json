@@ -80,7 +80,7 @@
       "website": "https://www.one.com",
       "startDate": "2012-02-01",
       "endDate": "2014-07-31",
-      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS/PostgresSQL single-page application that servers +200K different domains.",
+      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS/PostgresSQL single-page application that serves +200K different domains.",
       "highlights": [
         "Back-end JSON APIs (PHP), then later using Javascript/NodeJS.",
         "Automated build script from minifying assets to debian packaging (Bash).",
