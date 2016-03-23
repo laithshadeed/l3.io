@@ -1,4 +1,4 @@
-## l3.io Source Code
+# l3.io Source Code
 
 This work is based on [JSON Resume](https://jsonresume.org). I have to patch different npm packages to make it looks nice for me namely:
  - [resume-cli](https://github.com/laithshadeed/resume-cli)
@@ -10,14 +10,29 @@ Copyrights & thanks is preserved for each module author.
 
 ## Build
 ```
-npm install && gulp
+npm install -g gulp
+npm install
 
 ```
 
-## Local Demo
+## Serve locally
 
 ```
 gulp serve
+
+```
+
+## Serve locally from dist direcotry
+
+```
+gulp serve:dist
+
+```
+
+## Publish to s3 bucket
+
+```
+gulp publish
 
 ```
 
