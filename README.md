@@ -9,6 +9,7 @@ This work is based on [JSON Resume](https://jsonresume.org). I have to patch dif
 Copyrights & thanks is preserved for each module author.
 
 ## Build
+
 ```
 npm install -g gulp
 npm install
