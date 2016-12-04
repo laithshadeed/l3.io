@@ -11,8 +11,8 @@ Copyrights & thanks is preserved for each module author.
 ## Build
 
 ```
-npm install -g gulp
-npm install
+# Install yarn: https://yarnpkg.com/en/docs/install
+yarn
 
 ```
 
