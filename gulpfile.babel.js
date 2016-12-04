@@ -7,12 +7,16 @@ import browserSync from 'browser-sync';
 import {exec as exec} from 'child_process';
 
 gulp.task('default', ['build']);
-gulp.task('build', ['index', 'markdown', 'ace', 'so', 'ln']);
-gulp.task('clean', () => del.sync(['*.html', 'resume.md', '*.pdf', 'dist']));
+gulp.task('build', ['index', 'markdown', 'ace', 'so', 'ln', 'favicon']);
+gulp.task('clean', () => del.sync([
+  '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'faviconData.json', 'manifest.json',
+  '*.png', '*.ico', '*.svg'
+]));
 
 const $ = gulploadplugins();
 const resume = './node_modules/.bin/resume';
 const theme = './node_modules/jsonresume-theme';
+const favicon = './node_modules/.bin/real-favicon';
 const tasks = [
   {
     name: 'index',
@@ -33,6 +37,11 @@ const tasks = [
   {
     name: 'print',
     cmd: `${resume} export --theme ${theme}-sshorter resume-print.html`
+  },
+  {
+    name: 'favicon',
+    cmd: `${favicon} generate favicon-spec.json favicon-out.json . && ` +
+      `${favicon} inject favicon-out.json . *.html`
   }
 ];
 
@@ -60,8 +69,9 @@ gulp.task('serve', ['build'], () => {
 
 gulp.task('dist', ['build'], () => {
   return gulp.src([
-    '*.{html,jpg,md,json,pdf}',
+    '*.{html,jpg,md,json,pdf,png,svg,ico,xml}',
     '!package.json',
+    '!favicon-out.json',
     '!README.md'
   ]).pipe(gulp.dest('dist'));
 });

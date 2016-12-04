@@ -4,7 +4,7 @@ node_modules
 *.pdf
 resume.md
 browserconfig.xml
-faviconData.json
+favicon-out.json
 manifest.json
 *.png
 favicon.ico
