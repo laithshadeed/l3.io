@@ -3,3 +3,9 @@ node_modules
 *.html
 *.pdf
 resume.md
+browserconfig.xml
+faviconData.json
+manifest.json
+*.png
+favicon.ico
+safari-pinned-tab.svg
