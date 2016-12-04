@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "6"
+sudo: required # Until Yarn repo is added to apt-source-whitelist
 install:
   - node --version
   - yarn install
