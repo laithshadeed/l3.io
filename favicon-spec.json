@@ -30,6 +30,7 @@
       "pictureAspect": "noChange",
       "themeColor": "#ffffff",
       "manifest": {
+        "name": "Laith Shadeed",
         "display": "standalone",
         "orientation": "notSet",
         "onConflict": "override",
