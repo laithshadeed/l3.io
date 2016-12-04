@@ -28,6 +28,7 @@
     },
     "androidChrome": {
       "pictureAspect": "noChange",
+      "backgroundColor": "#ffffff",
       "themeColor": "#ffffff",
       "manifest": {
         "name": "Laith Shadeed",
