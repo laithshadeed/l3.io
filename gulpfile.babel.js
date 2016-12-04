@@ -1,12 +1,16 @@
 'use strict';
 
+import path from 'path';
 import del from 'del';
 import gulp from 'gulp';
+import runSequence from 'run-sequence';
 import gulploadplugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
+import swPrecache from 'sw-precache';
+import pkg from './package.json';
 import {exec as exec} from 'child_process';
 
-gulp.task('default', ['build']);
+gulp.task('default', ['dist']);
 gulp.task('build', ['index', 'markdown', 'ace', 'so', 'ln', 'favicon']);
 gulp.task('clean', () => del.sync([
   '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'faviconData.json', 'manifest.json',
@@ -40,8 +44,7 @@ const tasks = [
   },
   {
     name: 'favicon',
-    cmd: `${favicon} generate favicon-spec.json favicon-out.json . && ` +
-      `${favicon} inject favicon-out.json . *.html`
+    cmd: `${favicon} generate favicon-spec.json favicon-out.json .`
   }
 ];
 
@@ -59,6 +62,10 @@ gulp.task('ln', ['pdf'], cb => {
   exec('ln -sf resume.pdf r.pdf', cb);
 });
 
+gulp.task('favicon-inject', cb => {
+	exec(`${favicon} inject favicon-out.json . *.html`, cb);
+});
+
 gulp.task('serve', ['build'], () => {
   browserSync({
     logPrefix: 'l3.io',
@@ -67,14 +74,31 @@ gulp.task('serve', ['build'], () => {
   });
 });
 
-gulp.task('dist', ['build'], () => {
-  return gulp.src([
+gulp.task('copy-files', () => {
+  gulp.src([
     '*.{html,jpg,md,json,pdf,png,svg,ico,xml}',
     '!package.json',
     '!favicon-out.json',
-    '!README.md'
+    '!README.md',
+    '!LICENSE.md'
   ]).pipe(gulp.dest('dist'));
+
+  gulp.src(['scripts/*.js'])
+    .pipe(gulp.dest('dist/scripts'));
+
+  return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js'])
+    .pipe(gulp.dest('dist/scripts'));
 });
+
+gulp.task('dist', ['clean'], cb =>
+	runSequence(
+		'build',
+		'favicon-inject',
+		'copy-files',
+		'generate-service-worker',
+		cb
+	)
+);
 
 gulp.task('lint', () => {
   gulp.src('gulpfile.babel.js')
@@ -85,6 +109,7 @@ gulp.task('lint', () => {
 gulp.task('serve:dist', ['dist'], () => {
   browserSync({
     logPrefix: 'l3.io',
+    https: true,
     server: ['dist'],
     port: 3000
   });
@@ -106,4 +131,30 @@ gulp.task('publish', ['dist'], () => {
     .pipe($.awspublish.gzip())
     .pipe(publisher.publish(headers))
     .pipe($.awspublish.reporter());
+});
+
+gulp.task('sw-inject', cb => {
+  exec('sed -i -e \'s@</body>@<script src="scripts/sw.js"></script></body>@\' dist/*.html', cb);
+});
+
+gulp.task('generate-service-worker', ['sw-inject'], () => {
+  const rootDir = 'dist';
+  const filepath = path.join(rootDir, 'service-worker.js');
+
+  return swPrecache.write(filepath, {
+    // Used to avoid cache conflicts when serving on localhost.
+    cacheId: pkg.name,
+    // sw-toolbox.js needs to be listed first. It sets up methods used in runtime-caching.js.
+    importScripts: [
+      'scripts/sw-toolbox.js',
+      'scripts/runtime-caching.js'
+    ],
+    staticFileGlobs: [
+      `${rootDir}/*.*`
+    ],
+    // Translates a static file path to the relative URL that it's served from.
+    // This is '/' rather than path.sep because the paths returned from
+    // glob always use '/'.
+    stripPrefix: rootDir + '/'
+  });
 });

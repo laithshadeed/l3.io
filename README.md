@@ -27,14 +27,7 @@ yarn
 ## Serve locally
 
 ```
-gulp serve
-
-```
-
-## Serve locally from dist direcotry
-
-```
-gulp serve:dist
+gulp
 
 ```
 

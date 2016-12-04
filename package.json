@@ -35,7 +35,10 @@
     "jsonresume-theme-markdown": "git://github.com/laithshadeed/jsonresume-theme-markdown.git",
     "jsonresume-theme-sshorter": "git://github.com/laithshadeed/jsonresume-theme-shorter.git",
     "jsonresume-theme-stackoverflow": "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git",
-    "resume-cli": "git://github.com/laithshadeed/resume-cli.git"
+    "resume-cli": "git://github.com/laithshadeed/resume-cli.git",
+    "run-sequence": "^1.2.2",
+    "sw-precache": "^4.2.3",
+    "sw-toolbox": "^3.4.0"
   },
   "eslintConfig": {
     "extends": "google"
