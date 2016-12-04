@@ -83,7 +83,7 @@ gulp.task('copy-files', () => {
     '!LICENSE.md'
   ]).pipe(gulp.dest('dist'));
 
-  gulp.src(['scripts/*.js']).pipe(gulp.dest('dist/scripts'));
+  gulp.src(['scripts/runtime-caching.js']).pipe(gulp.dest('dist/scripts'));
   gulp.src(['font/fontawesome.*']).pipe(gulp.dest('dist/font'));
 
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js'])
@@ -134,7 +134,8 @@ gulp.task('publish', ['dist'], () => {
 });
 
 gulp.task('sw-inject', cb => {
-  exec('sed -i -e \'s@</body>@<script src="scripts/sw.js"></script></body>@\' dist/*.html', cb);
+  exec('echo "<script>" > out && cat scripts/sw.js >> out && echo "</script></body>" >> out  && ' +
+       "perl -pe 's@</body>@`cat out`@ge' -i dist/*.html && rm out", cb);
 });
 
 gulp.task('generate-service-worker', ['sw-inject'], () => {
