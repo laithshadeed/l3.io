@@ -182,15 +182,15 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
-async@*, async@^2.0.1:
+async@*, async@1.5.2, async@^1.4.0, async@^1.5.0, async@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+
+async@^2.0.1:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/async/-/async-2.1.4.tgz#2d2160c7788032e4dd6cbe2502f1f9a2c8f6cde4"
   dependencies:
     lodash "^4.14.0"
-
-async@1.5.2, async@^1.4.0, async@^1.5.0, async@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
 async@~0.2.6:
   version "0.2.10"
@@ -2763,7 +2763,7 @@ jsonresume-theme-ace@^1.0.7:
 
 "jsonresume-theme-business-card-minimal@git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git":
   version "0.0.2"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git#75c022c7a6370737a375f6492ec2d0d9ecab8a8f"
+  resolved "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git#c098d08d7e84199a9cca444df5b2987a1ff8504c"
   dependencies:
     handlebars latest
 
@@ -4832,13 +4832,13 @@ underscore.string@^3.2.3:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
 
-underscore@*, underscore@1.7.x:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
-
-underscore@^1.8.3:
+underscore@*, underscore@^1.8.3:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
+
+underscore@1.7.x:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
 
 underscore@~1.6.0:
   version "1.6.0"
