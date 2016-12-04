@@ -83,8 +83,8 @@ gulp.task('copy-files', () => {
     '!LICENSE.md'
   ]).pipe(gulp.dest('dist'));
 
-  gulp.src(['scripts/*.js'])
-    .pipe(gulp.dest('dist/scripts'));
+  gulp.src(['scripts/*.js']).pipe(gulp.dest('dist/scripts'));
+  gulp.src(['font/fontawesome.*']).pipe(gulp.dest('dist/font'));
 
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js'])
     .pipe(gulp.dest('dist/scripts'));
