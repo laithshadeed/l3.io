@@ -1,8 +1,14 @@
 language: node_js
 node_js:
-- 5.9.1
-install: yarn
+  - "6"
+install:
+  - node --version
+  - yarn install
 script: gulp dist
+cache:
+  directories:
+  - node_modules
+  - $HOME/.yarn-cache
 deploy:
   provider: s3
   bucket: l3.io
