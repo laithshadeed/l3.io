@@ -11,7 +11,7 @@ import pkg from './package.json';
 import {exec as exec} from 'child_process';
 
 gulp.task('default', ['dist']);
-gulp.task('build', ['index', 'markdown', 'ace', 'so', 'ln', 'favicon']);
+gulp.task('build', ['index', 'markdown', 'html', 'ln', 'favicon']);
 gulp.task('clean', () => del.sync([
   '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'faviconData.json', 'manifest.json',
   '*.png', '*.ico', '*.svg'
@@ -31,12 +31,8 @@ const tasks = [
     cmd: `${resume} export --theme ${theme}-markdown resume.md`
   },
   {
-    name: 'ace',
-    cmd: `${resume} export --theme ${theme}-ace resume-ace.html`
-  },
-  {
-    name: 'so',
-    cmd: `${resume} export --theme ${theme}-stackoverflow resume-so.html`
+    name: 'html',
+    cmd: `${resume} export --theme ${theme}-stackoverflow resume.html`
   },
   {
     name: 'print',
