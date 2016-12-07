@@ -201,8 +201,8 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
 aws-sdk@^2.1.16:
-  version "2.7.11"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.7.11.tgz#054c73ad1a93af3009c32d828cadd2ef778f72c9"
+  version "2.7.12"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.7.12.tgz#b30ca9dbea40bff2d3c5fa285152afcfd83d314f"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
@@ -2748,14 +2748,14 @@ jsonpointer@^4.0.0:
 
 "jsonresume-theme-sshorter@git://github.com/laithshadeed/jsonresume-theme-shorter.git":
   version "0.3.0"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-shorter.git#979b66738e198e2a8f3c852fa71f6c06909c40db"
+  resolved "git://github.com/laithshadeed/jsonresume-theme-shorter.git#31570468ba14d004d0b376bd38e2f6543eb594be"
   dependencies:
     handlebars "^2.0.0-alpha.4"
     moment "^2.12.0"
 
 "jsonresume-theme-stackoverflow@git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git":
   version "1.0.0"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git#552446a36a925314f2946776192cd0e405ae1e47"
+  resolved "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git#5366d3aa73f01fe101c69000902bf9497eaaeb86"
   dependencies:
     handlebars latest
     moment latest
