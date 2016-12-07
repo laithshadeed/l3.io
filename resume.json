@@ -62,7 +62,7 @@
       "endDate": "2016-01-31",
       "highlights": [
         "Pushing forward the launch of Apple Maps integration with Booking.com (Perl).",
-        "Creation of a missing meeting rooms app & making hundreds of employees to become more efficient (Perl, ReactJS).",
+        "Creation of a missing meeting rooms app. It was handy time saver for hundreds of employees (Perl, ReactJS).",
         "Back-end support for maps, idea creation for A/B testing experiments with millions users & dollars every single day (Perl).",
         "Part of fire-fighting team. Support +600 engineers for rollouts and production issues. Train others on monitoring via Graphite.",
         "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and CentOS."
@@ -74,10 +74,10 @@
       "website": "https://www.one.com",
       "startDate": "2012-02-01",
       "endDate": "2014-07-31",
-      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS & PostgresSQL SPA that serves +200K different domains.",
+      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS & PostgresSQL SPA serving +200K different domains.",
       "highlights": [
         "Back-end JSON APIs (PHP), then later using NodeJS.",
-        "Automated build script from minifying assets to Debian packaging (Bash).",
+        "Automated build script from minifying assets, Debian packaging integrated with Jenkins CI (Bash).",
         "Puppetizing development environments with Vagrant.",
         "Patching different in-house system components: apache modules (C), video encoding (Perl), video player (Actionscript).",
         "Stack: Git, Knockout.js, Apache httpd, Varnish, Gearman, Redis, Hadoop, Puppet, and Debian."
@@ -92,7 +92,7 @@
       "summary": "Explore what @Scale means, part of multi-location development team, products for millions of users running on thousands of servers.",
       "highlights": [
         "Launch Y! News for mobile devices in Arabic using Yahoo! Blueprint (PHP), delivering the product for 17 countries.",
-        "Part of Y! Mail team to launch the product in Arabic with bidirectional support (Javascript) -  Bangalore, India",
+        "Part of Y! Mail team to launch the product in Arabic with bidirectional support (Javascript).",
         "Stack: Subversion, Zend Framework, Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
       ]
     },
@@ -103,7 +103,7 @@
       "startDate": "2009-02-01",
       "endDate": "2009-05-01",
       "highlights": [
-        "Created my first .dll file and simple filesystem enumeration utility with threading support",
+        "Created my first .dll file and simple filesystem enumeration utility with threading support.",
         "Stack: MS Visual Studio, MS VSS, C++, C, MFC, Win32 API, Boost and Qt."
       ]
     }
@@ -118,7 +118,7 @@
       "endDate": "2009-05-31",
       "gpa": "80%",
       "courses": [
-        "On dean's list for 5 consecutive semesters, got two scholarships. Designed an indoor positioning system using WLAN fingerprinting (C#)."
+        "On dean's list for 5 consecutive semesters, two scholarships. Designed an indoor positioning system (C#)."
       ]
     }
   ],
@@ -132,11 +132,11 @@
       "fluency": "Advanced"
     },
     {
-      "language": "Perl",
+      "language": "Ruby",
       "fluency": "Intermediate"
     },
     {
-      "language": "Ruby",
+      "language": "Perl",
       "fluency": "Intermediate"
     },
     {
