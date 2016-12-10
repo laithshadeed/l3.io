@@ -4,6 +4,9 @@
 <a href="https://travis-ci.org/laithshadeed/l3.io">
   <img alt="Travis Status" src="https://travis-ci.org/laithshadeed/l3.io.svg">
 </a>
+<a href="https://david-dm.org/laithshadeed/l3.io">
+  <img alt="Dependencies Status" src="https://david-dm.org/laithshadeed/l3.io.svg">
+</a>
 
 This work is based on [JSON Resume](https://jsonresume.org). I have to patch different npm packages to make it looks nice for me namely:
  - [resume-cli](https://github.com/laithshadeed/resume-cli)
