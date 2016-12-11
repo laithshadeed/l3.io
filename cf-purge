@@ -1,0 +1,18 @@
+# Purge l3.io
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/f0dc715e13cdfabb84117e1eb57f88e1/purge_cache" \
+     -H "X-Auth-Email: ${CF_EMAIL}" \
+     -H "X-Auth-Key: ${CF_SECRET}" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
+
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/0ec94323b7212768bd64c616ee4d2f6d/purge_cache" \
+     -H "X-Auth-Email: ${CF_EMAIL}" \
+     -H "X-Auth-Key: ${CF_SECRET}" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
+
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/f1bf4aff3ef620089d74357c7e025660/purge_cache" \
+     -H "X-Auth-Email: ${CF_EMAIL}" \
+     -H "X-Auth-Key: ${CF_SECRET}" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
