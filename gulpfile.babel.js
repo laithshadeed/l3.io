@@ -41,11 +41,16 @@ const tasks = [
   {
     name: 'favicon',
     cmd: `${favicon} generate favicon-spec.json favicon-out.json .`
+  },
+  {
+    name: 'sw-inject',
+    cmd: 'echo "<script>" > o && cat scripts/sw.js >> o && echo "</script></body>" >> o  && ' +
+       "perl -pe 's@</body>@`cat o`@ge' -i dist/*.html && rm o"
   }
 ];
 
 tasks.forEach(task => {
-  gulp.task(task.name, ['clean'], cb => {
+  gulp.task(task.name, cb => {
     exec(task.cmd, cb);
   });
 });
@@ -87,13 +92,14 @@ gulp.task('copy-files', () => {
 });
 
 gulp.task('dist', ['clean'], cb =>
-	runSequence(
-		'build',
-		'favicon-inject',
-		'copy-files',
-		'generate-service-worker',
-		cb
-	)
+  runSequence(
+    'build',
+    'favicon-inject',
+    'copy-files',
+    'sw-inject',
+    'sw',
+    cb
+  )
 );
 
 gulp.task('serve:dist', ['dist'], () => {
@@ -123,12 +129,7 @@ gulp.task('publish', ['dist'], () => {
     .pipe($.awspublish.reporter());
 });
 
-gulp.task('sw-inject', cb => {
-  exec('echo "<script>" > out && cat scripts/sw.js >> out && echo "</script></body>" >> out  && ' +
-       "perl -pe 's@</body>@`cat out`@ge' -i dist/*.html && rm out", cb);
-});
-
-gulp.task('generate-service-worker', ['sw-inject'], () => {
+gulp.task('sw', () => {
   const rootDir = 'dist';
   const filepath = path.join(rootDir, 'service-worker.js');
 
