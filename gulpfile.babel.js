@@ -96,12 +96,6 @@ gulp.task('dist', ['clean'], cb =>
 	)
 );
 
-gulp.task('lint', () => {
-  gulp.src('gulpfile.babel.js')
-    .pipe($.eslint())
-    .pipe($.eslint.format());
-});
-
 gulp.task('serve:dist', ['dist'], () => {
   browserSync({
     logPrefix: 'l3.io',
