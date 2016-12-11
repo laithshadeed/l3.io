@@ -43,6 +43,10 @@ const tasks = [
     cmd: `${favicon} generate favicon-spec.json favicon-out.json .`
   },
   {
+    name: 'favicon-inject',
+    cmd: `${favicon} inject favicon-out.json . *.html`
+  },
+  {
     name: 'sw-inject',
     cmd: 'echo "<script>" > o && cat scripts/sw.js >> o && echo "</script></body>" >> o  && ' +
        "perl -pe 's@</body>@`cat o`@ge' -i dist/*.html && rm o"
@@ -61,10 +65,6 @@ tasks.forEach(task => {
 
 gulp.task('pdf', ['print'], cb => {
   runSequence('print', 'to-pdf', cb);
-});
-
-gulp.task('favicon-inject', cb => {
-	exec(`${favicon} inject favicon-out.json . *.html`, cb);
 });
 
 gulp.task('serve', ['build'], () => {
