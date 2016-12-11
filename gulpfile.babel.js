@@ -120,7 +120,7 @@ gulp.task('publish', ['dist'], () => {
   });
 
   const headers = {
-    'Cache-Control': 'max-age=315360000, no-transform, public'
+    'Cache-Control': 'no-cache'
   };
 
   gulp.src('dist/*')
