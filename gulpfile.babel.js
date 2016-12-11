@@ -11,7 +11,7 @@ import pkg from './package.json';
 import {exec as exec} from 'child_process';
 
 gulp.task('default', ['dist']);
-gulp.task('build', ['index', 'markdown', 'html', 'ln', 'favicon']);
+gulp.task('build', ['index', 'markdown', 'html', 'pdf', 'favicon']);
 gulp.task('clean', () => del.sync([
   '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'faviconData.json', 'manifest.json',
   '*.png', '*.ico', '*.svg'
@@ -46,6 +46,10 @@ const tasks = [
     name: 'sw-inject',
     cmd: 'echo "<script>" > o && cat scripts/sw.js >> o && echo "</script></body>" >> o  && ' +
        "perl -pe 's@</body>@`cat o`@ge' -i dist/*.html && rm o"
+  },
+  {
+    name: 'to-pdf',
+    cmd: './node_modules/.bin/html-pdf resume-print.html resume.pdf'
   }
 ];
 
@@ -56,11 +60,7 @@ tasks.forEach(task => {
 });
 
 gulp.task('pdf', ['print'], cb => {
-  exec('./node_modules/.bin/html-pdf resume-print.html resume.pdf', cb);
-});
-
-gulp.task('ln', ['pdf'], cb => {
-  exec('ln -sf resume.pdf r.pdf', cb);
+  runSequence('print', 'to-pdf', cb);
 });
 
 gulp.task('favicon-inject', cb => {
