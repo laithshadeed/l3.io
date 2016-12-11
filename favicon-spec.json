@@ -1,6 +1,7 @@
 {
   "masterPicture": "p.jpg",
   "iconsPath": "/",
+  "versioning": true,
   "design": {
     "ios": {
       "pictureAspect": "noChange",
