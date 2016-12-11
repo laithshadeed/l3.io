@@ -13,7 +13,7 @@ import {exec as exec} from 'child_process';
 gulp.task('default', ['dist']);
 gulp.task('build', ['index', 'markdown', 'html', 'pdf', 'favicon']);
 gulp.task('clean', () => del.sync([
-  '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'faviconData.json', 'manifest.json',
+  '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'favicon-out.json', 'manifest.json',
   '*.png', '*.ico', '*.svg'
 ]));
 
