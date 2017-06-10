@@ -24,8 +24,30 @@ deploy:
     secret_access_key:
       secure: QA4oQsIWBD8CK2U2WoIKDDjmd4o7fm2v534OBRLHF2hJGkmMjQG3P4YGH/+aNLKU+dKhruwVKzlO9wkw1ATKUDriuwsdBv1KbG/InYzAGF61WIkqh6teSPshM8aFBH6Up5hbl3ujyfbwYbnSXms8j+f4bx/P+dQxxECNx3hRVS0O7xS94VVxpmI/LkKWZS68bmxKRIscUAw+EDSYwDTw/2Mk5QqRddbWgD1YNzyvcKwDvafhAIUzLWz1kv3WdS6piSk53Cguatj/uYXzayMV3PxdILN3TDq1V0KGog3Yc7M0ev5oJSWN7oSFd5S0K5pU1QE2vw0X9XTlnQC1B2MEc9znQWU9IHGjvhc7Z7Ix/sttgz03t06Nn7d15dP8J/KEE1zl1jizodkqhDO3nxVxa6HggYthEAyU4HZyMq+LRaDCms/DR3PRjPh1MqfwJJ7aCKUGu06QLrBGyzReTqU5Ai2qf8SWu23vvj+Pkef8UhTmKE15HUNs46ssrgKLSmFLy6JUTv3tWjxdFzTAzeRCIKCvnE7wExGfvr5TVREYjHVJRFaiEUDv7g41efijG57mpn6kkPbsROyGVBrTdg6BzpVPBaU+da64Pcx6Gj5CVAxi+KIKuWkcf9t6NCCYRIkn/YhgZJOMJ1yL1o1E6DYMWTnvGW/3a/G3tErX9hcgJus=
   - provider: s3
+    bucket: l3.ai
+    region: eu-central-1
+    skip_cleanup: true
+    acl: public_read
+    local_dir: dist
+    detect_encoding: true
+    cache_control: "no-cache"
+    access_key_id: AKIAIM37XXFCOWS6F7PA
+    secret_access_key:
+      secure: QA4oQsIWBD8CK2U2WoIKDDjmd4o7fm2v534OBRLHF2hJGkmMjQG3P4YGH/+aNLKU+dKhruwVKzlO9wkw1ATKUDriuwsdBv1KbG/InYzAGF61WIkqh6teSPshM8aFBH6Up5hbl3ujyfbwYbnSXms8j+f4bx/P+dQxxECNx3hRVS0O7xS94VVxpmI/LkKWZS68bmxKRIscUAw+EDSYwDTw/2Mk5QqRddbWgD1YNzyvcKwDvafhAIUzLWz1kv3WdS6piSk53Cguatj/uYXzayMV3PxdILN3TDq1V0KGog3Yc7M0ev5oJSWN7oSFd5S0K5pU1QE2vw0X9XTlnQC1B2MEc9znQWU9IHGjvhc7Z7Ix/sttgz03t06Nn7d15dP8J/KEE1zl1jizodkqhDO3nxVxa6HggYthEAyU4HZyMq+LRaDCms/DR3PRjPh1MqfwJJ7aCKUGu06QLrBGyzReTqU5Ai2qf8SWu23vvj+Pkef8UhTmKE15HUNs46ssrgKLSmFLy6JUTv3tWjxdFzTAzeRCIKCvnE7wExGfvr5TVREYjHVJRFaiEUDv7g41efijG57mpn6kkPbsROyGVBrTdg6BzpVPBaU+da64Pcx6Gj5CVAxi+KIKuWkcf9t6NCCYRIkn/YhgZJOMJ1yL1o1E6DYMWTnvGW/3a/G3tErX9hcgJus=
+  - provider: s3
     bucket: laith.ml
     region: eu-west-1
+    skip_cleanup: true
+    acl: public_read
+    local_dir: dist
+    detect_encoding: true
+    cache_control: "no-cache"
+    access_key_id: AKIAIM37XXFCOWS6F7PA
+    secret_access_key:
+      secure: QA4oQsIWBD8CK2U2WoIKDDjmd4o7fm2v534OBRLHF2hJGkmMjQG3P4YGH/+aNLKU+dKhruwVKzlO9wkw1ATKUDriuwsdBv1KbG/InYzAGF61WIkqh6teSPshM8aFBH6Up5hbl3ujyfbwYbnSXms8j+f4bx/P+dQxxECNx3hRVS0O7xS94VVxpmI/LkKWZS68bmxKRIscUAw+EDSYwDTw/2Mk5QqRddbWgD1YNzyvcKwDvafhAIUzLWz1kv3WdS6piSk53Cguatj/uYXzayMV3PxdILN3TDq1V0KGog3Yc7M0ev5oJSWN7oSFd5S0K5pU1QE2vw0X9XTlnQC1B2MEc9znQWU9IHGjvhc7Z7Ix/sttgz03t06Nn7d15dP8J/KEE1zl1jizodkqhDO3nxVxa6HggYthEAyU4HZyMq+LRaDCms/DR3PRjPh1MqfwJJ7aCKUGu06QLrBGyzReTqU5Ai2qf8SWu23vvj+Pkef8UhTmKE15HUNs46ssrgKLSmFLy6JUTv3tWjxdFzTAzeRCIKCvnE7wExGfvr5TVREYjHVJRFaiEUDv7g41efijG57mpn6kkPbsROyGVBrTdg6BzpVPBaU+da64Pcx6Gj5CVAxi+KIKuWkcf9t6NCCYRIkn/YhgZJOMJ1yL1o1E6DYMWTnvGW/3a/G3tErX9hcgJus=
+  - provider: s3
+    bucket: laith.ai
+    region: eu-central-1
     skip_cleanup: true
     acl: public_read
     local_dir: dist
