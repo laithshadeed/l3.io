@@ -10,7 +10,6 @@ This work is based on [JSON Resume](https://jsonresume.org). I have to patch dif
  - [resume-schema](https://github.com/laithshadeed/resume-schema)
  - [jsonresume-theme-stackoverflow](https://github.com/laithshadeed/jsonresume-theme-stackoverflow)
  - [jsonresume-theme-shorter](https://github.com/laithshadeed/jsonresume-theme-shorter)
- - [jsonresume-theme-markdown](https://github.com/laithshadeed/jsonresume-theme-markdown)
  - [jsonresume-theme-businesscard-minimal](https://github.com/laithshadeed/jsonresume-theme-businesscard-minimal)
 
 Copyrights & thanks is preserved for each module author.

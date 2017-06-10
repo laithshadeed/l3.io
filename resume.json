@@ -3,15 +3,11 @@
     "name": "Laith Shadeed",
     "label": "\u03bb-writer & problem-solver with \u2665",
     "picture": "p.jpg",
-    "email": "aGlAbDMuaW8=",
-    "phone": "MDYyNzI0OTM5Mzk=",
-    "website": "https://l3.io",
-    "websiteTitle": "l3.io",
+    "email": "aGlAbDMuYWk=",
+    "phone": "KzMxNjI3MjQ5Mzkz",
+    "website": "https://l3.ai",
+    "websiteTitle": "l3.ai",
     "summary": "Internet Intern",
-    "location": {
-      "city": "Amsterdam",
-      "countryCode": "NL"
-    },
     "profiles": [
       {
         "network": "Twitter",
@@ -44,10 +40,6 @@
         "url": "resume.pdf"
       },
       {
-        "name": "Markdown",
-        "url": "resume.md"
-      },
-      {
         "name": "JSON",
         "url": "resume.json"
       }
@@ -55,33 +47,68 @@
   },
   "work": [
     {
+      "company": "AIMMS",
+      "position": "Software Engineer",
+      "website": "https://aimms.com",
+      "startDate": "2017-04-01",
+      "summary": "Sharing modern & agile development practices.",
+      "highlights": [
+        "Mathematical Optimization in Javascript.",
+        "Stack: Javascript, NodeJS, Webpack, jQuery."
+      ],
+      "location": {
+        "city": "Haarlem"
+      }
+    },
+    {
+      "company": "SuperSaaS",
+      "position": "Lead Software Engineer",
+      "website": "https://www.supersaas.com",
+      "startDate": "2016-02-01",
+      "endDate": "2017-3-31",
+      "summary": "Modernizing the platform from server configuration to browser UI.",
+      "highlights": [
+        "Add support for subscriptions via credit card (Ruby, Javascript).",
+        "Bare-metal server provisioning, monitoring, logging and alerting (Bash, Perl).",
+        "Replace flash download & back-end excel generation with modern browser solution (Javascript).",
+        "Stack: Passenger, Apache httpd, MySQL, Monit, Munin, Nagios and Ubuntu."
+      ],
+      "location": {
+        "city": "Amsterdam"
+      }
+    },
+    {
       "company": "Booking.com",
-      "position": "Back-end Software Engineer",
+      "position": "Software Engineer",
       "website": "https://www.booking.com",
       "startDate": "2014-08-01",
       "endDate": "2016-01-31",
       "highlights": [
         "Pushing forward the launch of Apple Maps integration with Booking.com (Perl).",
-        "Creation of a missing meeting rooms app. It was handy time saver for hundreds of employees (Perl, ReactJS).",
-        "Back-end support for maps, idea creation for A/B testing experiments with millions users & dollars every single day (Perl).",
-        "Part of fire-fighting team. Support +600 engineers for rollouts and production issues. Train others on monitoring via Graphite.",
-        "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and CentOS."
-      ]
+        "Back-end of maps in hotel page & search result. A/B testing with millions users every day (Perl).",
+        "Part of fire-fighting team. Support many engineers for code rollout and production issues.",
+        "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and Debian."
+      ],
+      "location": {
+        "city": "Amsterdam"
+      }
     },
     {
       "company": "One.com",
-      "position": "Lead/Senior Back-end Software Engineer",
+      "position": "Senior Software Engineer",
       "website": "https://www.one.com",
       "startDate": "2012-02-01",
       "endDate": "2014-07-31",
-      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS & PostgresSQL SPA serving +200K different domains.",
+      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS & PostgreSQL for +200K domains.",
       "highlights": [
         "Back-end JSON APIs (PHP), then later using NodeJS.",
-        "Automated build script from minifying assets, Debian packaging integrated with Jenkins CI (Bash).",
-        "Puppetizing development environments with Vagrant.",
-        "Patching different in-house system components: apache modules (C), video encoding (Perl), video player (Actionscript).",
-        "Stack: Git, Knockout.js, Apache httpd, Varnish, Gearman, Redis, Hadoop, Puppet, and Debian."
-      ]
+        "Unifying development environments with Vagrant & Puppet.",
+        "Contributing components: apache modules (C), video encoding (Perl), video player (Actionscript).",
+        "Stack: PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
+      ],
+      "location": {
+        "city": "Dubai"
+      }
     },
     {
       "company": "Yahoo!",
@@ -89,23 +116,15 @@
       "website": "https://www.yahoo.com",
       "startDate": "2009-07-01",
       "endDate": "2012-01-31",
-      "summary": "Explore what @Scale means, part of multi-location development team, products for millions of users running on thousands of servers.",
+      "summary": "Code for @Scale, part of multi-location team, products for millions of users running on +1000 servers.",
       "highlights": [
-        "Launch Y! News for mobile devices in Arabic using Yahoo! Blueprint (PHP), delivering the product for 17 countries.",
+        "Launch Y! News for mobile in Arabic using Yahoo! Blueprint (PHP), delivering the product for 17 countries.",
         "Part of Y! Mail team to launch the product in Arabic with bidirectional support (Javascript).",
-        "Stack: Subversion, Zend Framework, Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
-      ]
-    },
-    {
-      "company": "Genie9",
-      "position": "Software Engineer, Intern",
-      "website": "https://www.genie9.com",
-      "startDate": "2009-02-01",
-      "endDate": "2009-05-01",
-      "highlights": [
-        "Created my first .dll file and simple filesystem enumeration utility with threading support.",
-        "Stack: MS Visual Studio, MS VSS, C++, C, MFC, Win32 API, Boost and Qt."
-      ]
+        "Stack: Zend Framework, Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
+      ],
+      "location": {
+        "city": "Amman & Bangalore"
+      }
     }
   ],
   "education": [
@@ -118,33 +137,29 @@
       "endDate": "2009-05-31",
       "gpa": "80%",
       "courses": [
-        "On dean's list for 5 consecutive semesters, two scholarships. Designed an indoor positioning system (C#)."
+        "Two scholarships. Designed an indoor positioning system (C#)."
       ]
     }
   ],
   "languages": [
-    {
-      "language": "PHP",
-      "fluency": "Advanced"
-    },
     {
       "language": "Javascript",
       "fluency": "Advanced"
     },
     {
       "language": "Ruby",
-      "fluency": "Intermediate"
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Bash",
+      "fluency": "Advanced"
     },
     {
       "language": "Perl",
       "fluency": "Intermediate"
     },
     {
-      "language": "Bash",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "C",
+      "language": "PHP",
       "fluency": "Prior Experience"
     },
     {
@@ -153,7 +168,7 @@
     },
     {
       "language": "Java",
-      "fluency": "Basic"
+      "fluency": "Rudimentary"
     }
   ]
 }
