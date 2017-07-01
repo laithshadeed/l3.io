@@ -1,6 +1,7 @@
 'use strict';
 
 import path from 'path';
+import fs from 'fs';
 import del from 'del';
 import gulp from 'gulp';
 import runSequence from 'run-sequence';
@@ -13,8 +14,8 @@ import {exec as exec} from 'child_process';
 gulp.task('default', ['dist']);
 gulp.task('build', ['index', 'html', 'pdf', 'favicon']);
 gulp.task('clean', () => del.sync([
-  '*.html', 'resume.md', '*.pdf', 'dist', 'browserconfig.xml', 'favicon-out.json', 'manifest.json',
-  '*.png', '*.ico', '*.svg'
+  'index.html', 'resume.html', 'resume-print.html', 'resume.md', '*.pdf', 'dist',
+  'browserconfig.xml', 'favicon-out.json', 'manifest.json', '*.png', '*.ico', '*.svg'
 ]));
 
 const $ = gulploadplugins();
@@ -82,6 +83,8 @@ gulp.task('copy-files', () => {
 
   gulp.src(['scripts/runtime-caching.js']).pipe(gulp.dest('dist/scripts'));
   gulp.src(['font/fontawesome.*']).pipe(gulp.dest('dist/font'));
+
+  fs.createReadStream('resume.pdf').pipe(fs.createWriteStream('dist/r.pdf'));
 
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js'])
     .pipe(gulp.dest('dist/scripts'));
