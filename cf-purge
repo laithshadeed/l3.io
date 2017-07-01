@@ -16,3 +16,8 @@ curl -X DELETE "https://api.cloudflare.com/client/v4/zones/f1bf4aff3ef620089d743
      -H "X-Auth-Key: ${CF_SECRET}" \
      -H "Content-Type: application/json" \
      --data '{"purge_everything":true}'
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/d1f83bf1d4ea15b441c4ffb3202681d6/purge_cache" \
+     -H "X-Auth-Email: ${CF_EMAIL}" \
+     -H "X-Auth-Key: ${CF_SECRET}" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
