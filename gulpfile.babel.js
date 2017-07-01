@@ -1,7 +1,6 @@
 'use strict';
 
 import path from 'path';
-import fs from 'fs';
 import del from 'del';
 import gulp from 'gulp';
 import runSequence from 'run-sequence';
@@ -51,6 +50,10 @@ const tasks = [
   {
     name: 'to-pdf',
     cmd: './node_modules/.bin/html-pdf resume-print.html resume.pdf'
+  },
+  {
+    name: 'to-pdf-short',
+    cmd: './node_modules/.bin/html-pdf resume-print.html r.pdf'
   }
 ];
 
@@ -83,8 +86,6 @@ gulp.task('copy-files', () => {
 
   gulp.src(['scripts/runtime-caching.js']).pipe(gulp.dest('dist/scripts'));
   gulp.src(['font/fontawesome.*']).pipe(gulp.dest('dist/font'));
-
-  fs.createReadStream('resume.pdf').pipe(fs.createWriteStream('dist/r.pdf'));
 
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js'])
     .pipe(gulp.dest('dist/scripts'));
