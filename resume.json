@@ -53,8 +53,9 @@
       "startDate": "2017-04-01",
       "summary": "Sharing modern & agile development practices.",
       "highlights": [
-        "Mathematical Optimization in Javascript.",
-        "Stack: Javascript, NodeJS, Webpack, jQuery."
+        "Improve page load by 5x on slow 3G connection.",
+        "Migrate +50% of source code from ES5 to ES2015+.",
+        "Stack: AWS, Docker, GitLab, Jenkins, Javascript, NodeJS, Webpack and jQuery."
       ],
       "location": {
         "city": "Haarlem"
@@ -70,7 +71,6 @@
       "highlights": [
         "Add support for subscriptions via credit card (Ruby, Javascript).",
         "Bare-metal server provisioning, monitoring, logging and alerting (Bash, Perl).",
-        "Replace flash download & back-end excel generation with modern browser solution (Javascript).",
         "Stack: Passenger, Apache httpd, MySQL, Monit, Munin, Nagios and Ubuntu."
       ],
       "location": {
@@ -85,7 +85,6 @@
       "endDate": "2016-01-31",
       "highlights": [
         "Pushing forward the launch of Apple Maps integration with Booking.com (Perl).",
-        "Back-end of maps in hotel page & search result. A/B testing with millions users every day (Perl).",
         "Part of fire-fighting team. Support many engineers for code rollout and production issues.",
         "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and Debian."
       ],
@@ -144,7 +143,7 @@
   "languages": [
     {
       "language": "Javascript",
-      "fluency": "Advanced"
+      "fluency": "Native Speaker"
     },
     {
       "language": "Ruby",
@@ -155,8 +154,16 @@
       "fluency": "Advanced"
     },
     {
+      "language": "Python",
+      "fluency": "Basic"
+    },
+    {
+      "language": "Crystal",
+      "fluency": "Basic"
+    },
+    {
       "language": "Perl",
-      "fluency": "Intermediate"
+      "fluency": "Prior Experience"
     },
     {
       "language": "PHP",
@@ -165,6 +172,18 @@
     {
       "language": "C++",
       "fluency": "Prior Experience"
+    },
+    {
+      "language": "C",
+      "fluency": "Prior Experience"
+    },
+    {
+      "language": "Go",
+      "fluency": "Rudimentary"
+    },
+    {
+      "language": "Rust",
+      "fluency": "Rudimentary"
     },
     {
       "language": "Java",
