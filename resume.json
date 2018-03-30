@@ -55,6 +55,7 @@
       "highlights": [
         "Improve page load by 5x on slow 3G connection.",
         "Migrate +50% of source code from ES5 to ES2015+.",
+        "Reduce End2End Test Pipeline execution time from 46 min to 3 min (Docker, Bash)",
         "Stack: AWS, Docker, GitLab, Jenkins, Javascript, NodeJS, Webpack and jQuery."
       ],
       "location": {
