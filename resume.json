@@ -51,7 +51,6 @@
       "position": "Software Engineer",
       "website": "https://aimms.com",
       "startDate": "2017-04-01",
-      "summary": "Sharing modern & agile development practices.",
       "highlights": [
         "Improve page load by 5x on slow 3G connection.",
         "Migrate +50% of source code from ES5 to ES2015+.",
