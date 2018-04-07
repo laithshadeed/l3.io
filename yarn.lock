@@ -2751,12 +2751,6 @@ jsonpointer@^4.0.0:
   dependencies:
     handlebars latest
 
-"jsonresume-theme-markdown@git://github.com/laithshadeed/jsonresume-theme-markdown.git":
-  version "1.0.2"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-markdown.git#f6c0a647f6e6c30167316beb2ff080e18cd9fcf8"
-  dependencies:
-    handlebars latest
-
 "jsonresume-theme-sshorter@git://github.com/laithshadeed/jsonresume-theme-shorter.git":
   version "0.3.0"
   resolved "git://github.com/laithshadeed/jsonresume-theme-shorter.git#479fd551fcf0336ac90ebb7e2549c51f4ec9c2c4"

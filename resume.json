@@ -38,24 +38,19 @@
       {
         "name": "PDF",
         "url": "resume.pdf"
-      },
-      {
-        "name": "JSON",
-        "url": "resume.json"
       }
     ]
   },
   "work": [
     {
       "company": "AIMMS",
-      "position": "Software Engineer",
+      "position": "Full-Stack Software Engineer",
       "website": "https://aimms.com",
       "startDate": "2017-04-01",
       "highlights": [
-        "Improve page load by 5x on slow 3G connection.",
-        "Migrate +50% of source code from ES5 to ES2015+.",
-        "Reduce End2End Test Pipeline execution time from 46 min to 3 min (Docker, Bash)",
-        "Stack: AWS, Docker, GitLab, Jenkins, Javascript, NodeJS, Webpack and jQuery."
+        "Improve page load by 4.5x on slow 3G connection (Javascript, Node.js).",
+        "Reduce GitLab end-2-end test pipeline execution time from 46 min to 3 min (Docker, Bash).",
+        "Stack: AWS, Docker, GitLab, Jenkins, Javascript, Node.js, Webpack and jQuery."
       ],
       "location": {
         "city": "Haarlem"
@@ -67,11 +62,10 @@
       "website": "https://www.supersaas.com",
       "startDate": "2016-02-01",
       "endDate": "2017-3-31",
-      "summary": "Modernizing the platform from server configuration to browser UI.",
       "highlights": [
-        "Add support for subscriptions via credit card (Ruby, Javascript).",
-        "Bare-metal server provisioning, monitoring, logging and alerting (Bash, Perl).",
-        "Stack: Passenger, Apache httpd, MySQL, Monit, Munin, Nagios and Ubuntu."
+        "Add credit card payments. 60% of new subscriptions start using it in the 1st week (Ruby, Javascript).",
+        "Add automated bare-metal server provisioning, monitoring, real-time logging and alerting (Bash, Perl).",
+        "Stack: Passenger, Capistrano, Apache httpd, MySQL, Monit, Munin, Nagios and Ubuntu."
       ],
       "location": {
         "city": "Amsterdam"
@@ -79,13 +73,15 @@
     },
     {
       "company": "Booking.com",
-      "position": "Software Engineer",
+      "position": "Back-end Software Engineer",
       "website": "https://www.booking.com",
       "startDate": "2014-08-01",
       "endDate": "2016-01-31",
       "highlights": [
-        "Pushing forward the launch of Apple Maps integration with Booking.com (Perl).",
-        "Part of fire-fighting team. Support many engineers for code rollout and production issues.",
+        "Launch Apple Map integration with Booking.com Hotels for the first time for Mac users (Perl).",
+        "Increase conversion rate for map users by 2% using Machine Learning (Perl).",
+        "Create a tool for scheduling in-house meetings, saving time for +900 employees (Perl, Javascript, React.js).",
+        "On the hiring team for final face-face interviews.",
         "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and Debian."
       ],
       "location": {
@@ -94,15 +90,15 @@
     },
     {
       "company": "One.com",
-      "position": "Senior Software Engineer",
+      "position": "Senior Back-end Software Engineer",
       "website": "https://www.one.com",
       "startDate": "2012-02-01",
       "endDate": "2014-07-31",
-      "summary": "Leading the change from legacy PHP & XML gallery to modern NodeJS & PostgreSQL for +200K domains.",
       "highlights": [
-        "Back-end JSON APIs (PHP), then later using NodeJS.",
-        "Unifying development environments with Vagrant & Puppet.",
-        "Contributing components: apache modules (C), video encoding (Perl), video player (Actionscript).",
+        "Photo Processing, Video Transcoding, Queuing, JSON APIs serving +200,000 domains (PHP, Node.js).",
+        "Create Keyword-driven testing framework on top of selenium API (Java).",
+        "Adding patches for apache authorization module (C).",
+        "Leading hiring efforts for many engineers: back-end, front-end and SDET.",
         "Stack: PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
       ],
       "location": {
@@ -111,14 +107,13 @@
     },
     {
       "company": "Yahoo!",
-      "position": "Software Engineer, Associate",
+      "position": "Back-end Software Engineer",
       "website": "https://www.yahoo.com",
       "startDate": "2009-07-01",
       "endDate": "2012-01-31",
-      "summary": "Code for @Scale, part of multi-location team, products for millions of users running on +1000 servers.",
       "highlights": [
-        "Launch Y! News for mobile in Arabic using Yahoo! Blueprint (PHP), delivering the product for 17 countries.",
-        "Part of Y! Mail team to launch the product in Arabic with bidirectional support (Javascript).",
+        "Launch Y! News Mobile for Middle East market serving 17 countries (PHP, Javascript).",
+        "Part of Y! Mail team launching the product for Middle East market serving +70 million users.",
         "Stack: Zend Framework, Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
       ],
       "location": {
@@ -154,20 +149,24 @@
       "fluency": "Advanced"
     },
     {
+      "language": "PHP",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Perl",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Java",
+      "fluency": "Basic"
+    },
+    {
       "language": "Python",
       "fluency": "Basic"
     },
     {
       "language": "Crystal",
       "fluency": "Basic"
-    },
-    {
-      "language": "Perl",
-      "fluency": "Prior Experience"
-    },
-    {
-      "language": "PHP",
-      "fluency": "Prior Experience"
     },
     {
       "language": "C++",
@@ -178,15 +177,15 @@
       "fluency": "Prior Experience"
     },
     {
+      "language": "C#",
+      "fluency": "Prior Experience"
+    },
+    {
       "language": "Go",
       "fluency": "Rudimentary"
     },
     {
       "language": "Rust",
-      "fluency": "Rudimentary"
-    },
-    {
-      "language": "Java",
       "fluency": "Rudimentary"
     }
   ]
