@@ -3215,7 +3215,7 @@ jsonpointer@^4.0.0:
 
 "jsonresume-theme-business-card-minimal@git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git":
   version "0.0.2"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git#18bb0c5d2f1cccc9408ce72ff5d440971f8d0146"
+  resolved "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git#baa063274580db8f600f7e44705f333ff1b19deb"
   dependencies:
     handlebars latest
 
@@ -3228,7 +3228,7 @@ jsonpointer@^4.0.0:
 
 "jsonresume-theme-stackoverflow@git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git":
   version "1.0.0"
-  resolved "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git#4f64e5115fd98fb53a9df5d5546d1b497c0930a5"
+  resolved "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git#25a9499308252220aa1f46f1f20f112d8f8d8053"
   dependencies:
     handlebars latest
     moment latest
