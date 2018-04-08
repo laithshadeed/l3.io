@@ -3,6 +3,7 @@
 import path from 'path';
 import del from 'del';
 import gulp from 'gulp';
+import merge from 'merge-stream';
 import runSequence from 'run-sequence';
 import gulploadplugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
@@ -119,13 +120,22 @@ gulp.task('publish', ['dist'], () => {
     }
   });
 
-  const headers = {
-    'Cache-Control': 'no-cache'
-  };
+  let gzipFilter = ['dist/**/*.js', 'dist/**/*.html', 'dist/**/*.css'];
 
-  gulp.src('dist/*')
-    .pipe($.awspublish.gzip())
-    .pipe(publisher.publish(headers))
+  let plainFilter = [
+    'public/**/*',
+    '!public/**/*.js',
+    '!public/**/*.html',
+    '!public/**/*.css'
+  ];
+
+  let gzip = gulp.src(gzipFilter).pipe($.awspublish.gzip());
+  let plain = gulp.src(plainFilter);
+
+  merge(gzip, plain)
+    .pipe(publisher.cache())
+    .pipe(publisher.publish())
+    .pipe(publisher.sync())
     .pipe($.awspublish.reporter());
 });
 

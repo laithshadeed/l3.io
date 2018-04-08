@@ -34,6 +34,7 @@
     "jsonresume-theme-business-card-minimal": "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git",
     "jsonresume-theme-sshorter": "git://github.com/laithshadeed/jsonresume-theme-shorter.git",
     "jsonresume-theme-stackoverflow": "git://github.com/laithshadeed/jsonresume-theme-stackoverflow.git",
+    "merge-stream": "^1.0.1",
     "resume-cli": "git://github.com/laithshadeed/resume-cli.git",
     "run-sequence": "^1.2.2",
     "sw-precache": "^4.2.3",
