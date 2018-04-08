@@ -78,7 +78,7 @@ gulp.task('serve', ['build'], () => {
 
 gulp.task('copy-files', () => {
   gulp.src([
-    '*.{html,jpg,md,json,pdf,png,svg,ico,xml}',
+    '*.{html,jpg,md,json,pdf,png,svg,ico,xml,webmanifest}',
     '!package.json',
     '!favicon-out.json',
     '!README.md',
@@ -123,10 +123,10 @@ gulp.task('publish', ['dist'], () => {
   let gzipFilter = ['dist/**/*.js', 'dist/**/*.html', 'dist/**/*.css'];
 
   let plainFilter = [
-    'public/**/*',
-    '!public/**/*.js',
-    '!public/**/*.html',
-    '!public/**/*.css'
+    'dist/**/*',
+    '!dist/**/*.js',
+    '!dist/**/*.html',
+    '!dist/**/*.css'
   ];
 
   let gzip = gulp.src(gzipFilter).pipe($.awspublish.gzip());
