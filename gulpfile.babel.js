@@ -129,7 +129,7 @@ gulp.task('publish', ['dist'], () => {
     '!dist/**/*.css'
   ];
 
-  let gzip = gulp.src(gzipFilter).pipe($.awspublish.gzip());
+  let gzip = gulp.src(gzipFilter).pipe($.awspublish.gzip({ext: '.gz'}));
   let plain = gulp.src(plainFilter);
 
   merge(gzip, plain)
