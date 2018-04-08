@@ -37,7 +37,7 @@
     "merge-stream": "^1.0.1",
     "resume-cli": "git://github.com/laithshadeed/resume-cli.git",
     "run-sequence": "^1.2.2",
-    "sw-precache": "^4.2.3",
+    "sw-precache": "^5.2.1",
     "sw-toolbox": "^3.4.0"
   },
   "eslintConfig": {

@@ -151,9 +151,7 @@ gulp.task('sw', () => {
       'scripts/sw-toolbox.js',
       'scripts/runtime-caching.js'
     ],
-    staticFileGlobs: [
-      `${rootDir}/*.*`
-    ],
+    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
     // Translates a static file path to the relative URL that it's served from.
     // This is '/' rather than path.sep because the paths returned from
     // glob always use '/'.
