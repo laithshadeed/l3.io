@@ -145,11 +145,15 @@
       "fluency": "Advanced"
     },
     {
-      "language": "Bash",
+      "language": "Shell",
       "fluency": "Advanced"
     },
     {
       "language": "Crystal",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Typescript",
       "fluency": "Intermediate"
     },
     {
