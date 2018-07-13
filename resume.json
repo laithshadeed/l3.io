@@ -100,7 +100,7 @@
         "Create Keyword-driven testing framework on top of selenium API (Java).",
         "Adding patches for apache authorization module (C).",
         "Leading hiring efforts for many engineers: back-end, front-end and SDET.",
-        "Stack: PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
+        "Stack: Node.js, PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
       ],
       "location": {
         "city": "Dubai"
