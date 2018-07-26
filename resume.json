@@ -97,7 +97,6 @@
       "endDate": "2014-07-31",
       "highlights": [
         "Photo Processing, Video Transcoding, Queuing, JSON APIs serving +200,000 domains (PHP, Node.js).",
-        "Create Keyword-driven testing framework on top of selenium API (Java).",
         "Adding patches for apache authorization module (C).",
         "Leading hiring efforts for many engineers: back-end, front-end and SDET.",
         "Stack: Node.js, PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
