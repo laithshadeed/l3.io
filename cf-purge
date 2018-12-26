@@ -1,4 +1,4 @@
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/69b83d043c463fa0b758adf96ff7237d/purge_cache" \
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/d1f83bf1d4ea15b441c4ffb3202681d6/purge_cache" \
      -H "X-Auth-Email: ${CF_EMAIL}" \
      -H "X-Auth-Key: ${CF_SECRET}" \
      -H "Content-Type: application/json" \
