@@ -149,10 +149,6 @@
       "fluency": "Advanced"
     },
     {
-      "language": "Crystal",
-      "fluency": "Intermediate"
-    },
-    {
       "language": "Typescript",
       "fluency": "Intermediate"
     },
@@ -175,22 +171,6 @@
     {
       "language": "C++",
       "fluency": "Prior Experience"
-    },
-    {
-      "language": "C",
-      "fluency": "Prior Experience"
-    },
-    {
-      "language": "C#",
-      "fluency": "Prior Experience"
-    },
-    {
-      "language": "Go",
-      "fluency": "Rudimentary"
-    },
-    {
-      "language": "Rust",
-      "fluency": "Rudimentary"
     }
   ]
 }
