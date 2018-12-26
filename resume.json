@@ -51,7 +51,7 @@
         "Improve page load by 4.5x on slow 3G connection (Javascript, Node.js).",
         "Reduce GitLab end-2-end test pipeline execution time from 46 min to 3 min (Docker, Bash).",
         "Maintaining back-end APIs & TCP proxy in Node.js",
-        "Stack: AWS, Docker, GitLab, Jenkins, Javascript, Node.js, Webpack and jQuery."
+        "Stack: AWS, Docker, GitLab, Javascript, Node.js, Webpack and jQuery."
       ],
       "location": {
         "city": "Haarlem"
@@ -80,8 +80,7 @@
       "endDate": "2016-01-31",
       "highlights": [
         "Launch Apple Map integration with Booking.com Hotels for the first time for Mac users (Perl).",
-        "Increase conversion rate for map users by 2% using Machine Learning (Perl).",
-        "Create a tool for scheduling in-house meetings, saving time for +900 employees (Perl, Javascript, React.js).",
+        "Improve response time of Maps XHR requests by 50% (Perl, Javascript).",
         "On the hiring team for final face-face interviews.",
         "Stack: uWSGI, Ngnix, MySQL, Puppet, Redis, Hadoop, Graphite and Debian."
       ],
@@ -96,9 +95,8 @@
       "startDate": "2012-02-01",
       "endDate": "2014-07-31",
       "highlights": [
-        "Photo Processing, Video Transcoding, Queuing, JSON APIs serving +200,000 domains (PHP, Node.js).",
-        "Adding patches for apache authorization module (C).",
-        "Leading hiring efforts for many engineers: back-end, front-end and SDET.",
+        "In-house Photo Processing, Video Transcoding, Job Queuing serving +200,000 web domains (PHP, Node.js).",
+        "Lead the design of v2 & v3 of the photo application (PHP, Javascript).",
         "Stack: Node.js, PostgreSQL, Apache httpd, Varnish, Gearman, Redis, Puppet and Debian."
       ],
       "location": {
@@ -113,8 +111,8 @@
       "endDate": "2012-01-31",
       "highlights": [
         "Launch Y! News Mobile for Middle East market serving 17 countries (PHP, Javascript).",
-        "Part of Y! Mail team launching the product for Middle East market serving +70 million users.",
-        "Stack: Zend Framework, Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
+        "Part of Y! Mail team launching the product for +70 million Arabic users (PHP, Javascript).",
+        "Stack: Apache httpd, MySQL, Memcache, Apache Traffic Server and Redhat."
       ],
       "location": {
         "city": "Amman & Bangalore"
@@ -147,10 +145,6 @@
     {
       "language": "Shell",
       "fluency": "Advanced"
-    },
-    {
-      "language": "Typescript",
-      "fluency": "Intermediate"
     },
     {
       "language": "Java",
