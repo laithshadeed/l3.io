@@ -147,12 +147,28 @@
       "fluency": "Advanced"
     },
     {
-      "language": "Java",
+      "language": "Python",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Typescript",
       "fluency": "Basic"
     },
     {
-      "language": "Python",
+      "language": "Crystal",
       "fluency": "Basic"
+    },
+    {
+      "language": "C",
+      "fluency": "Basic"
+    },
+    {
+      "language": "Java",
+      "fluency": "Prior Experience"
+    },
+    {
+      "language": "C++",
+      "fluency": "Prior Experience"
     },
     {
       "language": "PHP",
@@ -163,8 +179,16 @@
       "fluency": "Prior Experience"
     },
     {
-      "language": "C++",
+      "language": "C#",
       "fluency": "Prior Experience"
+    },
+    {
+      "language": "Rust",
+      "fluency": "Rudimentary"
+    },
+    {
+      "language": "Go",
+      "fluency": "Rudimentary"
     }
   ]
 }
