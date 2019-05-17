@@ -48,9 +48,9 @@
       "website": "https://aimms.com",
       "startDate": "2017-04-01",
       "highlights": [
-        "Improve page load by 4.5x on slow 3G connection (Javascript, Node.js).",
+        "Decrease page load 50th percentile from 20s to below 4s (Javascript, Node.js).",
         "Reduce GitLab end-2-end test pipeline execution time from 46 min to 3 min (Docker, Bash).",
-        "Maintaining back-end APIs & TCP proxy in Node.js",
+        "Maintaining back-end REST APIs & TCP proxy in Node.js",
         "Stack: AWS, Docker, GitLab, Javascript, Node.js, Webpack and jQuery."
       ],
       "location": {
