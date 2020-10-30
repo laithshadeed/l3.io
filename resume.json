@@ -48,9 +48,8 @@
       "website": "https://aimms.com",
       "startDate": "2017-04-01",
       "highlights": [
-        "Decrease page load 50th percentile from 20s to below 4s (Javascript, Node.js).",
-        "Reduce GitLab end-2-end test pipeline execution time from 46 min to 3 min (Docker, Bash).",
-        "Maintaining back-end REST APIs & TCP proxy in Node.js",
+        "Lead & own web performance roadmap. Decrease page load 50th percentile from 20s to below 4s (Javascript, Node.js).",
+        "Build a CI/CD pipeline for three teams. Reducing execution time by 5x (Docker, Bash).",
         "Stack: AWS, Docker, GitLab, Javascript, Node.js, Webpack and jQuery."
       ],
       "location": {
@@ -129,7 +128,7 @@
       "endDate": "2009-05-31",
       "gpa": "80%",
       "courses": [
-        "Two scholarships. Designed an indoor positioning system (C#)."
+        "First Class Honors - three years in a row. Two scholarships. I designed an indoor positioning system (C#)."
       ]
     }
   ],
