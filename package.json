@@ -29,7 +29,7 @@
     "gulp-eslint": "^2.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-webserver": "^0.9.1",
-    "handlebars": "^4.0.6",
+    "handlebars": "^4.7.7",
     "html-pdf": "^2.0.1",
     "jsonresume-theme-business-card-minimal": "git://github.com/laithshadeed/jsonresume-theme-businesscard-minimal.git",
     "jsonresume-theme-sshorter": "git://github.com/laithshadeed/jsonresume-theme-shorter.git",
